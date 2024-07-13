@@ -1,0 +1,30 @@
+.frameParent,
+.productScreen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  gap: 30px;
+  max-width: 100%;
+}
+.productScreen {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .frameParent {
+    gap: var(--gap-mini);
+    padding-left: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
