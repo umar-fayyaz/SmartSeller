@@ -1,0 +1,130 @@
+.selectedProducts {
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 126px;
+  z-index: 1;
+}
+.frameChild {
+  height: 50px;
+  width: 478px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.chevroletS10Pickup,
+.kiaBewEconomy {
+  margin: 0;
+}
+.kiaBewEconomyContainer {
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.firstIcon {
+  width: 12px;
+  height: 6px;
+  position: relative;
+  z-index: 1;
+}
+.counterProductOneRemove {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 0;
+}
+.frameItem,
+.rectangleParent {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-lg);
+  z-index: 1;
+}
+.frameItem {
+  height: 50px;
+  width: 478px;
+  position: relative;
+  display: none;
+}
+.goPartsReplacementFor,
+.lowerValance88967926 {
+  margin: 0;
+}
+.goPartsReplacementForContainer {
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.secondIcon {
+  width: 12px;
+  height: 6px;
+  position: relative;
+  z-index: 1;
+}
+.counterProductTwoRemove {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 0;
+}
+.rectangleGroup {
+  align-self: stretch;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-6xl);
+  z-index: 2;
+  margin-top: -1px;
+}
+.counterProductList,
+.quantityROI,
+.rectangleGroup,
+.sourceLayer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.sourceLayer {
+  flex: 1;
+  flex-direction: column;
+}
+.counterProductList,
+.quantityROI {
+  align-self: stretch;
+}
+.counterProductList {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-smi);
+  box-sizing: border-box;
+  font-size: var(--font-size-2xs);
+  color: var(--color-black);
+}
+.quantityROI {
+  flex-direction: column;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-inter);
+}

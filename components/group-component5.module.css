@@ -1,73 +1,280 @@
-.orderBoxesBackground {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.frameChild {
+  width: 1080px;
+  height: 270px;
+  position: relative;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  display: none;
+  max-width: 100%;
+}
+.carParts1,
+.profitPercentage {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  white-space: nowrap;
+  z-index: 1;
+}
+.profitPercentage {
+  text-transform: uppercase;
+}
+.carParts,
+.profitInputFields {
+  display: flex;
+  align-items: flex-start;
+}
+.profitInputFields {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: -9px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+}
+.carParts {
+  width: 888px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.frameItem {
+  height: 40px;
+  width: 693px;
+  position: relative;
   border-radius: var(--br-6xs);
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-300);
   box-sizing: border-box;
+  display: none;
+  max-width: 100%;
 }
-.orderDetails,
-.totalOrders {
+.enterSkuFor {
   position: relative;
-  display: inline-block;
-  min-width: 38px;
-}
-.totalOrders {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-500);
-  min-width: 82px;
-}
-.orderDetailsParent,
-.ordersData {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.orderDetailsParent {
-  align-self: stretch;
-  gap: var(--gap-3xs);
   z-index: 1;
 }
-.ordersData {
-  width: 82px;
-  padding: var(--padding-lgi) 0 0;
+.frameInner,
+.rectangleGroup {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
   box-sizing: border-box;
-}
-.box1Icon {
-  height: 90px;
-  width: 90px;
-  position: relative;
-  object-fit: contain;
   z-index: 1;
 }
-.orderBoxesBackgroundParent {
-  align-self: stretch;
+.rectangleGroup {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: var(--padding-sm) var(--padding-16xl) var(--padding-sm)
-    var(--padding-xl);
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-xl) var(--padding-4xs);
+  min-width: 358px;
+  max-width: 100%;
+}
+.frameInner {
+  height: 40px;
+  width: 311px;
   position: relative;
-  gap: var(--gap-xl);
+}
+.frameParent,
+.profitPercentageInput {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-wrap: wrap;
+  gap: var(--gap-6xl);
+}
+.profitPercentageInput {
+  align-self: stretch;
+  padding: 0 var(--padding-3xs) 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.rectangleDiv {
+  height: 40px;
+  width: 181px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue);
+  display: none;
+}
+.search {
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 67px;
   z-index: 1;
+}
+.rectangleContainer {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-38xl) var(--padding-2xs);
+  z-index: 1;
+}
+.frameChild1 {
+  height: 40px;
+  width: 181px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue-100);
+  display: none;
+}
+.uploadFile {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 103px;
+  z-index: 1;
+}
+.groupDiv {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue-100);
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-20xl) var(--padding-2xs);
+  white-space: nowrap;
+  z-index: 1;
+  text-align: center;
+}
+.groupDiv,
+.sKUInput,
+.searchUpload {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchUpload {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.sKUInput {
+  width: 378px;
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.profitPercentage1 {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.frameChild2,
+.profitInputBox {
+  height: 40px;
+  position: relative;
+  border-radius: var(--br-6xs);
+}
+.profitInputBox {
+  align-self: stretch;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frameChild2 {
+  width: 181px;
+  background-color: var(--color-darkslateblue-100);
+  display: none;
+}
+.updateCost {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 114px;
+  z-index: 1;
+}
+.profitInputValue,
+.rectangleParent1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent1 {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue-100);
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-14xl) var(--padding-2xs);
+  white-space: nowrap;
+  z-index: 1;
+  text-align: center;
+  color: var(--color-white);
+}
+.profitInputValue {
+  width: 311px;
+  flex-direction: column;
+  gap: var(--gap-2xs-5);
+  color: var(--color-gray-200);
+}
+.profitInput,
+.rectangleParent,
+.uploadProfit {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.profitInput {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.rectangleParent,
+.uploadProfit {
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.uploadProfit {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs) 0 var(--padding-12xs);
+  color: var(--color-white);
+}
+.rectangleParent {
+  width: 1080px;
+  margin: 0 !important;
+  position: absolute;
+  top: -86px;
+  right: -126px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: var(--padding-xl);
+  gap: var(--gap-2xs-5);
   text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
   font-family: var(--font-inter);
 }
-@media screen and (max-width: 450px) {
-  .orderDetails {
-    font-size: var(--font-size-base);
+@media screen and (max-width: 1125px) {
+  .profitInput {
+    flex-wrap: wrap;
   }
-  .orderBoxesBackgroundParent {
+}
+@media screen and (max-width: 800px) {
+  .rectangleGroup {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .searchUpload {
     flex-wrap: wrap;
   }
 }

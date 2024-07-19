@@ -1,93 +1,301 @@
 .frameChild {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-6xs);
+  width: 300px;
+  height: 1000px;
+  position: relative;
   background-color: var(--color-white);
-  border: 1px solid var(--color-gray-300);
+  border-right: 1px solid var(--color-gray-300);
   box-sizing: border-box;
+  display: none;
 }
-.cardImagePlaceholder {
-  position: relative;
+.main {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
   display: inline-block;
-  min-width: 10px;
+  min-width: 38px;
+  flex-shrink: 0;
+}
+.dashboard,
+.dashboardIcon,
+.main {
+  position: relative;
   z-index: 1;
 }
-.cardImagePlaceholderWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-smi) 0 0;
+.dashboardIcon {
+  height: 22px;
+  width: 20px;
+  min-height: 22px;
 }
-.earphonesWithCaseSurroundedIcon {
-  height: 45px;
-  width: 45px;
-  position: relative;
-  border-radius: var(--br-6xs);
-  object-fit: cover;
-  z-index: 1;
-}
-.boldV32 {
-  position: relative;
+.dashboard {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
   display: inline-block;
-  min-width: 73px;
-  z-index: 1;
+  min-width: 85px;
 }
-.boldV32Wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-smi) 0 0;
-}
-.earphonesWithCaseSurroundedParent,
-.frameParent {
+.dashboardLink {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-3xs);
+  gap: var(--gap-mini);
 }
-.frameParent {
-  gap: var(--gap-2xl);
-}
-.div {
+.salesDashboardIcon {
+  width: 8px;
+  height: 8.8px;
   position: relative;
-  display: inline-block;
-  min-width: 40px;
+  border-radius: 50%;
+  background-color: var(--color-gray-500);
+  z-index: 1;
+}
+.salesDashboardLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-6) 0 0;
+}
+.salesDashboard {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.frameContainer,
+.salesDashboardLinkParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.salesDashboardLinkParent {
+  gap: var(--gap-mini);
+}
+.frameContainer {
+  padding: 0 0 0 var(--padding-7xl);
+}
+.dashboardLinkParent {
+  flex-direction: column;
+  gap: var(--gap-base-6);
+  flex-shrink: 0;
+}
+.dashboardLinkParent,
+.frameWrapper,
+.mainParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xl);
+  color: var(--color-gray-500);
+}
+.mainParent {
+  flex-direction: column;
+  gap: var(--gap-3xl);
+}
+.frameItem {
+  height: 33px;
+  width: 200px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue);
+  display: none;
+}
+.frameInner {
+  height: 21.2px;
+  width: 20px;
+  position: relative;
+  min-height: 21px;
+  z-index: 1;
+}
+.storesIntegration {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.rectangleGroup {
+  align-self: stretch;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-darkslateblue);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-4) var(--padding-3xs) var(--padding-7xs-4);
+  gap: var(--gap-mini);
   white-space: nowrap;
   z-index: 1;
+  color: var(--color-white);
 }
-.rectangleParent,
-.wrapper {
+.settingIcons {
+  width: 8px;
+  height: 8.8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-500);
+  z-index: 1;
+}
+.settingLinkElements {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-smi) 0 0;
+  padding: var(--padding-7xs-5) 0 0;
 }
-.rectangleParent {
+.sellerAccount {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 112px;
+  z-index: 1;
+}
+.settingLinkElementsParent,
+.settingLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.settingLinkElementsParent {
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.settingLinks {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-10xl) 0 var(--padding-17xl);
+}
+.ellipseDiv {
+  width: 8px;
+  height: 8.8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+  z-index: 1;
+}
+.ellipseWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) 0 0;
+}
+.vendorAccount {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 124px;
+  z-index: 1;
+}
+.frameGroup,
+.settingLinks1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frameGroup {
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.settingLinks1 {
+  justify-content: flex-end;
+  padding: 0 var(--padding-mid);
+  color: var(--color-darkslateblue);
+}
+.frameChild1 {
+  width: 8px;
+  height: 8.8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-500);
+  z-index: 1;
+}
+.ellipseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) 0 0;
+}
+.defaultSettings {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 124px;
+  z-index: 1;
+}
+.frameParent1,
+.settingLinks2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frameParent1 {
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.settingLinks2 {
+  justify-content: flex-end;
+  padding: 0 var(--padding-mid);
+}
+.frameDiv,
+.frameParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-2xs-7);
+}
+.frameDiv {
   align-self: stretch;
   flex-direction: row;
-  justify-content: space-between;
-  padding: var(--padding-5xs) var(--padding-32xl) var(--padding-6xs)
-    var(--padding-xl);
+  align-items: flex-start;
+  padding: 0 var(--padding-lg) var(--padding-40xl-5);
+  color: var(--color-gray-500);
+}
+.lineDiv {
+  align-self: stretch;
+  height: 1px;
   position: relative;
-  gap: var(--gap-xl);
+  border-top: 1px dashed var(--color-gainsboro-200);
+  box-sizing: border-box;
   z-index: 1;
+}
+.rectangleParent {
+  width: 300px;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) var(--padding-11xl) var(--padding-615xl)
+    var(--padding-13xl);
+  gap: var(--gap-7xl-6);
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1000px) {
   .rectangleParent {
-    flex-wrap: wrap;
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-393xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 975px) {
+  .rectangleParent {
+    display: none;
+  }
+}
+@media screen and (max-width: 725px) {
+  .rectangleParent {
+    padding-bottom: var(--padding-249xl);
+    box-sizing: border-box;
   }
 }

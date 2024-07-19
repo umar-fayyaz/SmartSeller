@@ -1,0 +1,30 @@
+.sidebar,
+.vendorAccount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  max-width: 100%;
+}
+.vendorAccount {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .sidebar {
+    gap: var(--gap-mini);
+    padding-left: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
