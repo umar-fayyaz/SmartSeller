@@ -1,0 +1,149 @@
+.amazonSellerAccount1Child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gray-300);
+  z-index: 14;
+}
+.frameChild {
+  width: 1080px;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  display: none;
+  max-width: 100%;
+}
+.integratedOptions,
+.sellerAccountIntegration {
+  margin: 0;
+  position: relative;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+.sellerAccountIntegration {
+  font-size: inherit;
+}
+.integratedOptions {
+  font-size: var(--font-size-xl);
+}
+.sellerAccountIntegrationParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.platformStructureChild {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  min-height: 150px;
+  z-index: 1;
+}
+.platformStructure,
+.platformStructureWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.platformStructure {
+  gap: var(--gap-11xl);
+}
+.platformStructureWrapper,
+.rectangleParent {
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.rectangleParent {
+  width: 1080px;
+  margin: 0 !important;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-xl) var(--padding-3xl);
+  gap: var(--gap-6xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.amazonSellerAccount1,
+.frameGroup,
+.frameParent {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.frameGroup {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-321xl) 0 var(--padding-325xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.amazonSellerAccount1,
+.frameParent {
+  align-items: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.amazonSellerAccount1 {
+  width: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .frameGroup {
+    padding-top: var(--padding-202xl);
+    padding-bottom: var(--padding-205xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 975px) {
+  .sellerAccountIntegration {
+    font-size: var(--font-size-7xl);
+  }
+  .platformStructure {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 725px) {
+  .frameGroup {
+    padding-top: var(--padding-125xl);
+    padding-bottom: var(--padding-127xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sellerAccountIntegration {
+    font-size: var(--font-size-lgi);
+  }
+  .integratedOptions {
+    font-size: var(--font-size-base);
+  }
+}

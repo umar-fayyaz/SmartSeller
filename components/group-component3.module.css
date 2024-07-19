@@ -1,0 +1,84 @@
+.frameChild {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.div {
+  position: relative;
+  display: inline-block;
+  min-width: 8px;
+  z-index: 1;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.innovationConceptLaptopIcon {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  object-fit: cover;
+  z-index: 1;
+}
+.lenovo3rdGeneration {
+  position: relative;
+  z-index: 1;
+}
+.innovationConceptLaptopParent,
+.lenovo3rdGenerationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.innovationConceptLaptopParent {
+  flex-direction: row;
+  padding: 0 var(--padding-5xs) 0 0;
+  gap: var(--gap-3xs);
+}
+.div1 {
+  position: relative;
+  display: inline-block;
+  min-width: 61px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.container,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.rectangleParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-xl) var(--padding-6xs);
+  position: relative;
+  gap: var(--gap-4xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+}

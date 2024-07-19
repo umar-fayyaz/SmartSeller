@@ -1,0 +1,326 @@
+.sidebarBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.asset24x1 {
+  height: 46px;
+  width: 57px;
+  position: relative;
+  object-fit: cover;
+}
+.smartSeller {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  white-space: nowrap;
+}
+.asset24x1Parent,
+.smartSellerWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.smartSellerWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.asset24x1Parent {
+  flex-direction: row;
+  gap: var(--gap-mini);
+}
+.searchInput {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-gainsboro-100);
+}
+.search {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 53px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.searchInputParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-mini);
+  position: relative;
+}
+.frameContainer {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
+.frameContainer,
+.frameGroup,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-49xl);
+}
+.frameWrapper {
+  width: 579px;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameChild {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  min-height: 40px;
+}
+.pictureBackground {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--color-white);
+}
+.avatarCircle,
+.avatarIcon,
+.pictureBackground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.avatarIcon {
+  height: 63.21%;
+  width: 78.79%;
+  top: 36.79%;
+  right: 21.21%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.avatarCircle {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+}
+.avatarBadge {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 31.25%;
+  color: inherit;
+  display: inline-block;
+  min-width: 6px;
+  z-index: 1;
+}
+.avatarCircleParent,
+.avatarIconParent {
+  position: absolute;
+  height: 53.51%;
+  width: 48.48%;
+  top: 0;
+  right: 0;
+  bottom: 46.49%;
+  left: 51.52%;
+  z-index: 1;
+}
+.avatarIconParent {
+  height: 74.75%;
+  width: 82.5%;
+  bottom: 25.25%;
+  left: 17.5%;
+}
+.pictureBackgroundParent {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.frameItem {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--color-white);
+}
+.frameInner,
+.frameItem,
+.vectorIcon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.vectorIcon {
+  height: 78.13%;
+  width: 75.76%;
+  top: 21.88%;
+  right: 24.24%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frameInner {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+}
+.a,
+.ellipseParent,
+.vectorParent {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.a {
+  text-decoration: none;
+  left: 25%;
+  color: inherit;
+  display: inline-block;
+  min-width: 8px;
+}
+.ellipseParent,
+.vectorParent {
+  height: 50%;
+  width: 48.48%;
+  right: 0;
+  bottom: 50%;
+  left: 51.52%;
+}
+.vectorParent {
+  height: 80%;
+  width: 82.5%;
+  bottom: 20%;
+  left: 17.5%;
+}
+.groupIcon,
+.rectangleParent {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.groupIcon {
+  min-height: 40px;
+}
+.groupDiv,
+.profileCard {
+  display: flex;
+  align-items: flex-start;
+}
+.groupDiv {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.profileCard {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 0;
+}
+.groupFormselect {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslateblue);
+}
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) 0 0;
+}
+.menuButtonIcon {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  border-radius: var(--br-31xl);
+  object-fit: cover;
+}
+.frameParent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.profileCardParent {
+  width: 466px;
+  justify-content: flex-start;
+  gap: var(--gap-22xl);
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.frameParent,
+.profileCardParent,
+.sidebarBackgroundParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.sidebarBackgroundParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-11xl) var(--padding-xs)
+    var(--padding-13xl);
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-eras-medium-itc);
+}
+@media screen and (max-width: 700px) {
+  .frameGroup {
+    gap: var(--gap-15xl);
+  }
+  .profileCardParent {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameGroup {
+    gap: var(--gap-mid);
+  }
+}

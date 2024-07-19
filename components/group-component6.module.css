@@ -1,0 +1,268 @@
+.cardBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+}
+.cardContent,
+.cardSalesAmount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cardSalesAmount {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+}
+.cardContent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  min-width: 179px;
+}
+.salesIconLabel,
+.totalIconsBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.totalIconsBackground {
+  margin: 0 !important;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.salesIconLabel {
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+}
+.salesIcon {
+  position: absolute;
+  height: 59.7%;
+  width: 59.7%;
+  top: 20.15%;
+  right: 20.15%;
+  bottom: 20.15%;
+  left: 20.15%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+.salesIconLabelParent {
+  align-self: stretch;
+  height: 134px;
+  position: relative;
+}
+.expensesIconLabel,
+.totalSales {
+  position: relative;
+  display: inline-block;
+}
+.expensesIconLabel {
+  min-width: 96px;
+  white-space: nowrap;
+}
+.totalSales {
+  min-width: 73px;
+}
+.totalSalesWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 var(--padding-xs);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+.totalSalesAmount {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.frameParent,
+.salesAmount,
+.totalIconsBackgroundParent,
+.totalSalesAmount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.salesAmount {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-lgi);
+}
+.frameParent,
+.totalIconsBackgroundParent {
+  z-index: 1;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-mini);
+}
+.totalIconsBackgroundParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-xl) var(--padding-51xl) var(--padding-xl)
+    var(--padding-52xl);
+  position: relative;
+}
+.frameChild,
+.salesIconBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.frameChild {
+  margin: 0 !important;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.salesIconBackground {
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+}
+.spendingIcon {
+  position: absolute;
+  height: 59.7%;
+  width: 59.7%;
+  top: 20.15%;
+  right: 20.15%;
+  bottom: 20.15%;
+  left: 20.15%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+.salesIconBackgroundParent {
+  height: 134px;
+  flex: 1;
+  position: relative;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs);
+}
+.b {
+  position: relative;
+  display: inline-block;
+  min-width: 87px;
+  white-space: nowrap;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-15xl) 0 var(--padding-16xl);
+}
+.totalExpensesAmount {
+  position: relative;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameGroup {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-mini);
+  z-index: 1;
+}
+.cardBackgroundParent,
+.cardTotal,
+.frameGroup,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-xl) var(--padding-40xl) var(--padding-xl)
+    var(--padding-41xl);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.cardBackgroundParent,
+.cardTotal {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  min-width: 179px;
+}
+.cardBackgroundParent {
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-4xl);
+  min-width: 399px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 700px) {
+  .cardBackgroundParent {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .expensesIconLabel {
+    font-size: var(--font-size-base);
+  }
+  .totalIconsBackgroundParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .b {
+    font-size: var(--font-size-base);
+  }
+  .rectangleParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

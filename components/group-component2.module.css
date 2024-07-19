@@ -1,0 +1,93 @@
+.frameChild {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.cardImagePlaceholder {
+  position: relative;
+  display: inline-block;
+  min-width: 10px;
+  z-index: 1;
+}
+.cardImagePlaceholderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.earphonesWithCaseSurroundedIcon {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  object-fit: cover;
+  z-index: 1;
+}
+.boldV32 {
+  position: relative;
+  display: inline-block;
+  min-width: 73px;
+  z-index: 1;
+}
+.boldV32Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.earphonesWithCaseSurroundedParent,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameParent {
+  gap: var(--gap-2xl);
+}
+.div {
+  position: relative;
+  display: inline-block;
+  min-width: 40px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.rectangleParent,
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.rectangleParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-32xl) var(--padding-6xs)
+    var(--padding-xl);
+  position: relative;
+  gap: var(--gap-xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+}

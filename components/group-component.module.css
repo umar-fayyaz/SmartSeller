@@ -299,3 +299,195 @@
     box-sizing: border-box;
   }
 }
+.salesChartBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+}
+.circle,
+.mostSellingProducts {
+  position: relative;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-darkslateblue);
+}
+.salesNavigationIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.sales {
+  position: relative;
+  display: inline-block;
+  min-width: 36px;
+}
+.salesNavigationIconsParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameChild {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-black);
+}
+.ellipseWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.purchase {
+  position: relative;
+  display: inline-block;
+  min-width: 62px;
+}
+.frameGroup {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameGroup,
+.frameParent,
+.salesNavigation {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.salesNavigation {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-12xs);
+}
+.salesFilterBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-gray-400);
+}
+.salesData {
+  position: relative;
+  display: inline-block;
+  min-width: 30px;
+}
+.vectorIcon {
+  width: 10px;
+  height: 5px;
+  position: relative;
+}
+.salesDataParent,
+.salesFilterIcon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.salesFilterIcon {
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+}
+.salesDataParent {
+  flex-direction: row;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+.salesFilterBackgroundParent {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-10xs) var(--padding-3xs) var(--padding-11xs);
+  position: relative;
+  font-size: var(--font-size-xs);
+}
+.salesChartContainer,
+.salesChartData,
+.salesFilterBackgroundParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.salesChartContainer {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-5xl);
+}
+.salesChartData {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  min-width: 170px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+.mostSellingProductsParent,
+.salesChartBackgroundParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.mostSellingProductsParent {
+  gap: var(--gap-59xl);
+  z-index: 1;
+}
+.salesChartBackgroundParent {
+  padding: var(--padding-xl) var(--padding-11xl);
+  box-sizing: border-box;
+  position: relative;
+  min-width: 399px;
+  min-height: 424px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 700px) {
+  .mostSellingProductsParent {
+    flex-wrap: wrap;
+    gap: var(--gap-20xl);
+  }
+  .salesChartBackgroundParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mostSellingProducts {
+    font-size: var(--font-size-base);
+  }
+  .mostSellingProductsParent {
+    gap: var(--gap-lgi);
+  }
+}

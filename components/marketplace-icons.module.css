@@ -1,0 +1,56 @@
+.frameChild {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  display: none;
+}
+.maskGroupIcon {
+  height: 33.3px;
+  width: 33.3px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.maskGroupWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 var(--padding-12xs);
+}
+.ebay {
+  position: relative;
+  display: inline-block;
+  min-width: 39px;
+  z-index: 1;
+}
+.marketplaceIcons,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  padding: var(--padding-lg) var(--padding-10xl) var(--padding-smi)
+    var(--padding-11xl);
+  gap: var(--gap-smi-7);
+  z-index: 17;
+}
+.marketplaceIcons {
+  width: 100px;
+  padding: var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
